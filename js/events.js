@@ -72,3 +72,12 @@ document.querySelector('#alien').addEventListener('click', function(e) {
     mode = 20;
     document.querySelector('#mode').textContent = "Alien";
 })
+
+// Mode mobile
+const fleches = document.querySelectorAll('.touches i')
+
+fleches.forEach( fleche => {
+    fleche.addEventListener('click',function() {
+        console.log('fleche')
+    })
+})

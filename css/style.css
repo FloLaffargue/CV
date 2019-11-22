@@ -256,6 +256,27 @@ section .heading h2{
 .liste-experience {
     list-style-type: disc;
 }
+@media all and (max-width:570px) {
+    .timeline-panel-container, .timeline-panel-container-inverted{
+        width:100%;
+        float:none;
+    }
+    .timeline-panel{
+        width:100%;
+        margin:0 !important;
+    }
+    .timeline-panel:after {
+        content:'';
+        position: static;
+    }
+    .timeline-panel-container-inverted, .timeline-panel-container {
+        transform: translateY(80px);
+    }
+    .timeline > li {
+        margin-bottom: 80px;
+    }
+}
+
 /* FORMATION */
 #education{
     background: #fff;
