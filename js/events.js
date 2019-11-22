@@ -77,7 +77,12 @@ document.querySelector('#alien').addEventListener('click', function(e) {
 const fleches = document.querySelectorAll('.touches i')
 
 fleches.forEach( fleche => {
-    fleche.addEventListener('click',function() {
-        console.log('fleche')
+    fleche.addEventListener('click',function(e) {
+        cleanArrows();
+        let nom = e.target.className
+        nom == "fas fa-arrow-circle-up" ? keyUp() : '';
+        nom == "fas fa-arrow-circle-right" ? keyRight() : '';
+        nom == "fas fa-arrow-circle-left" ? keyLeft() : '';
+        nom == "fas fa-arrow-circle-down" ? keyDown() : '';
     })
 })
