@@ -124,8 +124,8 @@ function Apple(body) {
         appleX = Math.floor(Math.random() * widthLimit);
         appleY = Math.floor(Math.random() * heightLimit);
     
-        console.log("Pomme X : " + appleX);
-        console.log("Pomme Y : " + appleY);
+        // console.log("Pomme X : " + appleX);
+        // console.log("Pomme Y : " + appleY);
     
         // Check si la position de la pomme ne se trouve pas dans le snake
         if(this.intoSnake()) {

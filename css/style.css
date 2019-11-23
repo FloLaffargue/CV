@@ -429,7 +429,14 @@ footer span {
         padding:40px;
         border-radius: 50%;
     }
-
+}
+@media all and (max-width:570px) {
+    .touches {
+        padding:25px;
+    }
+    #snake .fas {
+        font-size: 3rem !important;
+    }
 }
 #snake canvas {
     background-color: #ddd;
@@ -520,6 +527,6 @@ footer span {
     margin-bottom: 5px;
     text-align: center;
 }
-.github {
+.github, .mail {
     color: rgb(255, 128, 64) !important;
 }

@@ -28,7 +28,6 @@ document.addEventListener('keydown', function(e) {
     
 })
 document.querySelector('#demarrer').addEventListener('click', function(e) {
-    console.log('test')
     if(e.target.textContent == "Démarrer") {
         // On reinitialise le score
         score = 0;
