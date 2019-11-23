@@ -394,29 +394,9 @@ footer span {
 /* ============================= */
 /* SNAKE */
 /* ============================= */
-#snake canvas {
-    background-color: #ddd;
-}
-@media all and (min-width:1086px) {
-    #snake canvas {
-        width:800px;
-        height:600px;
-    }
-}
-@media all and (max-width:1085px) {
-    #snake canvas {
-        width:600px;
-        height:450px;
-    }
-}
-@media all and (max-width:840px) {
-    #snake canvas {
-        width:500px;
-        height:415px;
-    }
-}
+
 /* mode mobile */
-@media all and (max-width:730px) {
+@media all and (max-width:1024px) {
     #snake canvas {
         width: 100%;
         height:unset;
@@ -431,6 +411,8 @@ footer span {
         width: unset !important;
         max-width: 100%;
         height: unset !important;
+        border: none !important;
+        background-color:white !important;
     }
     #score, .meilleur-score  {
         display: none !important;
@@ -441,6 +423,16 @@ footer span {
     .nbPommes {
         margin-bottom: 0px;
     }
+    .touches {
+        display: block !important;
+        background-color: #333;
+        padding:40px;
+        border-radius: 50%;
+    }
+
+}
+#snake canvas {
+    background-color: #ddd;
 }
 .container-top {
     padding:24px;
@@ -449,6 +441,9 @@ footer span {
     display: flex;
     justify-content: center;
     padding:10px;
+}
+#snake .heading {
+    padding-bottom: 0px !important;
 }
 #snake h1 {
     text-align: center;
@@ -513,20 +508,17 @@ footer span {
     background-color: #BADA55;
 }
 #snake .fas {
-    font-size: 3rem;
-    color: grey;
+    font-size: 3.5rem;
+    color: #FF8040 !important;
 }
 .touches {
+    display: none;
     margin-top: 10px;
 }
 .touche-haut  {
-    width: 3rem;
     margin: auto;
     margin-bottom: 5px;
-}
-.touches-bas  {
-    width: 155px;
-    margin: auto;
+    text-align: center;
 }
 .github {
     color: rgb(255, 128, 64) !important;
