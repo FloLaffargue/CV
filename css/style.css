@@ -330,11 +330,11 @@ section .heading h2{
 #portfolio img:hover {
     filter: none;
 }
-#portfolio .col-md-6{
+#portfolio .col-md-4{
     text-align: center;
 }
 @media all and (max-width:768px) {
-    #portfolio .col-md-6:first-child{
+    #portfolio .col-md-4:not(:last-child){
         margin-bottom: 50px;
     }
 }
